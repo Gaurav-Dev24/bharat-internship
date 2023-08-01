@@ -148,7 +148,7 @@ input::placeholder{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 85vh;
+  height: 75vh;
 }
 .download-left{
   width: 40vw;
@@ -254,7 +254,7 @@ img[alt="boxshot"]{
   display: flex;
   align-items: center;
   justify-content: space-around;
-  height: 85vh;
+  height: 70vh;
 }
 
 .children-left{
@@ -389,4 +389,117 @@ footer select {
   background-blend-mode: multiply;
   color: #fff;
   border-radius: 0.5rem;
+}
+
+
+
+/* Media Queries */
+
+@media (max-width: 480px){
+  .hero-container{
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .hero-main button{
+    width: auto;    
+  }
+  .nav-buttons{
+    display: none;
+  }
+
+  .tv-section{
+    display: block;
+    padding-top: 3rem;
+  }
+
+  .download-section{
+    display: block;
+    height: auto;
+    padding: 8rem  5rem;
+  }
+  .download-right{
+    width: 100%;
+  }
+
+  .watch-section{
+    display: block;
+    height: auto;
+    padding: 5rem 2rem;
+  }
+
+  .children-section{
+    display: block;
+    height: auto;
+    padding:2rem 5rem;
+  }
+  .children-right{
+    width: 100%;
+  }
+
+  .faq-section{
+    padding: 5rem;
+  }
+  .faq-button button{
+    width: auto;
+  }
+
+  footer{
+    display: block;
+    width: auto;
+    padding: 5rem;
+  }
+
+}
+
+@media (min-width: 481px) and (max-width: 749px) {
+  .hero-container{
+    height: auto;
+    width: 100%;
+    padding-bottom: 5rem;
+  }
+
+  .tv-section{
+    height: auto;
+    width: 100%;
+    display: block;
+    padding: 5rem;
+  }
+
+  .download-section{
+    height: auto;
+    width: 100%;
+    padding: 5rem 0;
+  }
+  .downloading{
+    display: none;
+  }
+  
+  .children-section{
+    height: auto;
+    width: 100%;
+  }
+
+  .watch-section{
+    height: auto;
+    width: 100%;
+    display: block;
+    padding: 5rem;
+  }
+
+  .faq-section h1{
+    width: auto;
+    padding: 5rem;
+  }
+  .faq-button button{
+    width: auto;
+  }
+}
+
+@media (min-width: 750px) and (max-width: 1024px) {
+  .hero-container,.download-section,.children-section{
+    height: auto;
+    width: 100%;
+    padding: 5rem;
+  }
+
 }
